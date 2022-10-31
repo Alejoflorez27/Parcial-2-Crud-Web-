@@ -1,0 +1,25 @@
+//Se ejecuta la peticion
+GET http://localhost:5000/users
+###
+GET http://localhost:5000/users/3
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Santi",
+    "email": "maicol100@gmail.com",
+    "gender": "masculino"
+}
+###
+PATCH  http://localhost:5000/users/4
+Content-Type: application/json
+
+{
+    "name": "Santiago Florez",
+    "email": "santi100@gmail.com",
+    "gender": "masculino"
+}
+###
+DELETE  http://localhost:5000/users/4
